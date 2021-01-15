@@ -433,6 +433,21 @@ img {
     margin: 20px 0;
   }
 }
+.social {
+  list-style: none;
+  margin: 10px 10px;
+  display: inline-block;
+  font-size: 40px;
+  padding: 20px 30px;
+  color: #111;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+.social:hover {
+  color: #292929;
+  border: 2px solid #292929;
+}
 
 @media (max-width: 600px) {
   header,
