@@ -199,6 +199,11 @@ img {
   padding: 10px;
 }
 
+.work .content .wordBx img:hover {
+  transition: 0.5s ease;
+  background-color: #2196f3;
+}
+
 .testimonial .content {
   display: flex;
   justify-content: space-between;
