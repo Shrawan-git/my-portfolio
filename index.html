@@ -174,15 +174,18 @@
                            
             </div>
             <div class="heading">
-                <input type="button" class="btn" value="View More" onclick="clicked()"/>
+                <input type="button" id="btnclick" class="btn" value="View More" onclick="clicked()"/>
             </div>
             <script>
                 function clicked(){
                     if(img==0){
-                        document.getElementById("img").style.display="none"
+                        document.getElementById("img").style.display="none";
+                        document.getElementById("btnclick").value = 'View More';
+                      
                         return img=1;
                     } else {
-                        document.getElementById("img").style.display="flex"
+                        document.getElementById("img").style.display="flex";
+                        document.getElementById("btnclick").value = 'View Less';
                         return img=0;
                     }
                 }
