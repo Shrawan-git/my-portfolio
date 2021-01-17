@@ -157,10 +157,38 @@
                     <img src="work4.png">
                 </a>
                 </div>
+        </div>
+        <div class="content1" id="img">
+                <div class="wordBx">
+                    <a href="https://wopprigaming.co/" target="popup">
+                    <img src="work5.png">
+                </a>
+                </div>
+
+                <div class="wordBx">
+                    <a href="https://wopprigaming.co/" target="popup">
+                    <img src="work6.png">
+                </a>
+                </div>
+                </div>
+                           
             </div>
             <div class="heading">
-                <a href="#" class="btn">View more </a>
+                <input type="button" class="btn" value="View More" onclick="clicked()"/>
             </div>
+            <script>
+                function clicked(){
+                    if(img==0){
+                        document.getElementById("img").style.display="none"
+                        return img=1;
+                    } else {
+                        document.getElementById("img").style.display="flex"
+                        return img=0;
+                    }
+                }
+            </script>
+
+
     </section>
     
     <section class="testimonial" id="testimonials">

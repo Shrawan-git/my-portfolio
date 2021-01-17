@@ -126,6 +126,10 @@ header.sticky ul li a {
   justify-content: space-between;
 }
 
+.content1 {
+  display: none;
+  justify-content: space-between;
+}
 .contentBx h3 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -200,6 +204,17 @@ img {
 }
 
 .work .content .wordBx img:hover {
+  transition: 0.5s ease;
+  background-color: #2196f3;
+}
+
+.work .content1 .wordBx img {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.work .content1 .wordBx img:hover {
   transition: 0.5s ease;
   background-color: #2196f3;
 }
