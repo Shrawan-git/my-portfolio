@@ -354,8 +354,8 @@ img {
 .formBx form input[type="submit"] {
   background: #de2e2e;
   cursor: pointer;
-  max-width: 20%;
   border-radius: 5px;
+  max-width: 30%;
 }
 
 .contactInfo {
