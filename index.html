@@ -24,7 +24,7 @@
     <section class="banner" id="home">
         <div class="textBx">
             <h2>"Hello World", I Am<br><span> Shrawan Shakya.</span></h2>
-            <h3>A Web And Mobile Application Developer.</h3>
+            <h3>A Web Application Developer.</h3>
             <a href="Profile.pdf" class="btn" download>Download CV</a>
         </div>
     </section>
@@ -130,69 +130,76 @@
     </section>
     <section class="work" id="work">
         <div class="heading white">
-            <h2>My Latest Work</h2>
-            <p> Here are some of the projects I have worked on recently. </p>
+            <h2>My Work</h2>
+            <p> Here are some of the projects I have worked on. Some of them are individual work while some are team projects. </p>
         </div>
-        <div class="content">
-                <div class="wordBx">
+   
+            <main class="gridcard">
+                <article>
                       <a href="https://woppriexpress.com/" target="popup">
-                    <img src="work1.png">
-                    </a>
-                </div>
-               
-                <div class="wordBx">
+                    <img src="work1.png" alt="">
+                </a>
+                    <div class="desc">
+                        <p>Website build for Delivery record keeping system. It kept the record for users, their delivery schedule and product information as well  </p>
+                        <button>View</button>
+                    </div>
+            </article>
+            <article>
                     <a href="https://github.com/Shrawan-git" target="popup">
                     <img src="work2.png">
                 </a>
-                </div>
-               
-                <div class="wordBx">
+                    <div class="desc">
+                        <p>React web project for restaurant food ordering system. Consists of both Client and Admin, including Android app for users. </p>
+                        <button>View</button>
+                    </div>
+            </article>
+               <article>
                     <a href="https://github.com/Shrawan-git" target="popup">
                     <img src="work3.png">
                 </a>
-                </div>
-                
-                <div class="wordBx">
+                    <div class="desc">
+                        <p>College thesis project, a prototype based on the game known as Angry birds made with Unity, for both desktop and smartphone. </p>
+                        <button>View</button>
+                    </div>
+            </article>
+                <article>
                     <a href="https://wopprigaming.co/" target="popup">
                     <img src="work4.png">
                 </a>
-                </div>
-        </div>
-        <div class="content1" id="img">
-                <div class="wordBx">
+                    <div class="desc">
+                        <p>Worked on this website, where gaming tournaments are hosted and users are able to register for the tournaments and upcoming events.   </p>
+                        <button>View</button>
+                    </div>
+                </article>
+             
+            <article>
                     <a href="https://wopprigaming.co/" target="popup">
                     <img src="work5.png">
                 </a>
-                </div>
+                    <div class="desc">
+                        <p>On-Demand Service project build on Android studio, using Agile framework where I worked on a team in college and was able to do testing for this app. </p>
+                        <button>View</button>
+                    </div>
+            </article>
 
-                <div class="wordBx">
+            <article>
                     <a href="https://wopprigaming.co/" target="popup">
                     <img src="work6.png">
                 </a>
-                </div>
-                </div>
-                           
-            </div>
-            <div class="heading">
-                <input type="button" id="btnclick" class="btn" value="View More" onclick="clicked()"/>
-            </div>
-            <script>
-                function clicked(){
-                    if(img==0){
-                        document.getElementById("img").style.display="none";
-                        document.getElementById("btnclick").value = 'View More';
-                        return img=1;
-                    } else {
-                        document.getElementById("img").style.display="flex";
-                        document.getElementById("btnclick").value = 'View Less';
-                        return img=0;
-                    }
-                }
-            </script>
-
-
+                    <div class="desc">
+                        <p>This is the Android application version for that gaming tournament website where I have worked on with a group of my best colleagues. </p>
+                        <button>View</button>
+                    </div>
+            </article>
+        </main>
     </section>
-    
+
+    <section class="current" id="currents">
+    <h2>Currently, </h2><p>I am working as a software engineer at a highly reputated company named NBIT, where I am gaining a lot of experience, learning and building my technical knowledge among the best team of developers I am working with right now on large scale projects. </p>
+    <a href="https://nbit.com.np/" target="popup">
+    <img src = "nbit.png" alt="nbit"/>
+    </a>
+    </section>
     <section class="testimonial" id="testimonials">
         <div class="heading">
             <h2>My Educational Qualification</h2>
@@ -282,7 +289,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © 2021 Shrawan Shakya. All Right Received.</p>
+        <p>© 2021 Shrawan Shakya. All Right Received.</p>
     </div>
 
     <script type="text/javascript">

@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:200,300,400,500,600,700,800,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -184,39 +184,93 @@ img {
   font-weight: 400;
 }
 
-.work .content {
+.gridcard {
+  justify-content: center;
+  padding: 20px 20px;
+  margin: 80px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  justify-content: space-between;
-  padding: 10px;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
 }
 
-.work .content .workBx {
-  width: 100%;
-  grid-gap: 5px;
-}
-
-.work .content .wordBx img {
-  width: 100%;
+.gridcard > article {
+  background: #eee5e9;
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  padding: 10px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s;
 }
 
-.work .content .wordBx img:hover {
-  transition: 0.5s ease;
-  background-color: #2196f3;
+.gridcard > article:hover {
+  transform: translateY(5px);
+  box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
 }
 
-.work .content1 .wordBx img {
+.gridcard > article img {
   width: 100%;
-  border-radius: 20px;
-  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.work .content1 .wordBx img:hover {
-  transition: 0.5s ease;
-  background-color: #2196f3;
+.desc {
+  padding: 0 20px 20px;
+}
+
+.desc p {
+  font-size: small;
+  margin: 10px;
+}
+
+.desc button {
+  background: #ef6f6c;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 1060px) {
+  .gridcard {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+@media (max-width: 778px) {
+  .gridcard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gridcard > article {
+    text-align: center;
+  }
+}
+
+.current {
+  background-color: #111;
+}
+
+.current h2 {
+  color: #eee5e9;
+}
+
+.current p {
+  color: #eee5e9;
+}
+
+.current img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .testimonial .content {
