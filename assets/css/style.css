@@ -180,6 +180,7 @@ img {
 
 .services .content .servicesBx:hover h2 {
   color: #000;
+  font-weight: bold;
 }
 
 .services .content .servicesBx img {
@@ -195,13 +196,15 @@ img {
 }
 
 .gridcard {
+  align-content: center;
   justify-content: center;
+  justify-items: center;
   padding: 20px 20px;
   margin: 80px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  align-items: center;
+  align-items: start;
 }
 
 .gridcard > article {
@@ -233,6 +236,7 @@ img {
   font-size: 14px;
   margin: 10px;
   line-break: 2px;
+  line-height: 1.6;
   text-align: left;
 }
 
