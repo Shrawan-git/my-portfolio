@@ -135,6 +135,10 @@ header.sticky ul li a {
   margin-bottom: 10px;
 }
 
+.contentBx p {
+  line-height: 1.6;
+}
+
 w50 {
   min-width: 50%;
 }
@@ -172,6 +176,10 @@ img {
 
 .services .content .servicesBx:hover {
   background: #f65846;
+}
+
+.services .content .servicesBx:hover h2 {
+  color: #000;
 }
 
 .services .content .servicesBx img {
